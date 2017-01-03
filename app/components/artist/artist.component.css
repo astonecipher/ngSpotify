@@ -1,0 +1,16 @@
+.artist-thumb {
+    width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.artist-header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+    max-height: 75px;
+}

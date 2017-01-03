@@ -1,0 +1,24 @@
+<form class="col-md-6 col-md-offset-3">
+    <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="searchStr" name='searchStr' (keyup)="searchMusic()" placeholder="ng-Search">
+    </div>
+    <!--<button type="submit" class="btn btn-default">Submit</button>-->
+</form>
+
+<div class="col-md-8">
+    <div *ngIf="searchRes">
+        <div *ngFor="let artist of searchRes">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4><a routerLink="/artist/{{artist.id}}">{{artist.name}}</a></h4>
+                    <div>
+                        <strong>Genres: </strong>
+                        <span *ngFor="let genre of artist.genres">
+                            {{genre}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
