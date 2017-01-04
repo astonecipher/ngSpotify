@@ -1,0 +1,15 @@
+<div class="artist-albums">
+    <div class="row">
+        <div *ngFor="let track of tracks">
+            <div class="col-md-12">
+                <div class="album well">
+                    <h4>{{track.name}}</h4>
+                    <audio controls>
+                        <source src="{{track.preview_url}}" type="audio/ogg">
+                        <source src="{{track.preview_url}}" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
