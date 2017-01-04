@@ -7,6 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { AlbumComponent } from './components/album/album.component';
 
+
 const appRoutes: Routes = [
     {
         path: '',
@@ -23,8 +24,7 @@ const appRoutes: Routes = [
     {
         path: 'album/:id',
         component: AlbumComponent
-    },
-    
+    }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

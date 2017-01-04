@@ -53,7 +53,11 @@
     "@types/node": "^6.0.46",
     "@types/jasmine": "^2.5.36"
   },
+<<<<<<< HEAD
   "repository": {
     
   }
+=======
+  "repository": {}
+>>>>>>> 9db4128d4af56d4164df359e7000384a670318ce
 }
